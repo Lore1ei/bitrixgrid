@@ -1,0 +1,1537 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: Montserrat
+    color: #5D6070
+
+a
+    text-decoration: none
+    transition: all 0.4s
+
+img
+    max-width: 100%
+
+h1, h2, h3, h4, h5, h6
+    margin-top: 0
+
+.container_sub
+    max-width: 1480px
+    margin: 0 auto
+    padding-left: 40px
+    padding-right: 40px
+.header-bottom
+    background: #fff
+    box-shadow: inset 0px -1px 0px #F5F7FF
+.has-sub.menu-additional
+    position: relative
+.header
+    position: fixed
+    z-index: 999
+    left: 0
+    right: 0
+    top: 0
+    a
+        color: #5D6070
+    .header-top
+        padding: 12px 0
+        background: #F5F7FF
+        .header-top_flex
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .header_top_left
+                display: flex
+                align-items: center
+                font-size: 14px
+                line-height: 130%
+                .time_header_title
+                    margin-right: 8px
+                .time_header
+                    color: #4B4B4B
+            .header_top_right
+                .tel
+                    font-weight: 500
+                    margin-right: 16px
+                    transition: all 0.4s
+                    &:hover
+                        color: #FECD05
+                .callbck
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    color: #FECD05
+                    transition: all 0.4s
+                    &:hover
+                        color: #5D6070      
+                
+
+.basket
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 139px
+    height: 48px
+    background: #F5F7FF
+    border-radius: 2px
+    font-size: 14px
+    line-height: 130%
+    .basket__wrap
+        position: relative
+        span
+            position: absolute
+            width: 16px
+            height: 16px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #FECD05
+            border-radius: 100%
+            font-weight: bold
+            font-size: 12px
+            line-height: 130%
+            right: 2px
+            top: -6px
+            color: #111111
+    &:hover
+        background: darken(#F5F7FF, 4%)
+    svg
+        margin-right: 12px
+
+.header_bottom_flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 10px
+    padding-bottom: 20px
+    .menu-flex
+        display: flex
+        align-items: center
+        ul
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-left: 0
+            list-style: none
+            li:first-child
+                a
+                    width: 196px
+                    height: 48px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: #FECD05
+                    border-radius: 2px
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    color: #111111
+                    &:hover
+                        background: lighten(#FECD05, 10%)
+                    svg
+                        margin-right: 10px
+                    &.active
+                        color: #5D6070        
+            li:last-child
+                a
+                    margin-right: 0
+            a
+                margin-right: 78px
+                font-weight: 500
+                line-height: 20px
+                &:hover
+                    color: #FECD05
+                &.active
+                    color: #FECD05
+
+.footer
+    padding-top: 56px
+    padding-bottom: 52px
+    color: #4B4B4B
+    background: #F5F7FF
+    a
+        color: #4B4B4B
+    .footer-top
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-bottom: 64px
+    .footer_subtitle
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        color: #BEBFC7
+        margin-bottom: 20px
+    ul
+        padding-left: 0
+        list-style-type: none
+        margin: 0
+        &>li>a
+            display: block
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 16px
+            &:hover
+                color: #FECD05
+            &.active
+                color: #FECD05
+
+.footer-block:last-child
+    a
+        display: block
+        margin-bottom: 16px
+        &:hover
+            text-decoration: underline
+        &.tel
+            margin-bottom: 8px
+            font-weight: 500
+            line-height: 20px
+        &.callb_f
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            color: #FECD05
+    .address
+        margin-top: 0
+        max-width: 338px
+        margin-bottom: 24px
+        line-height: 145%
+
+.social__media
+    display: flex
+    .social-link
+        width: 32px
+        height: 32px
+        border-radius: 100%
+        display: flex !important
+        justify-content: center
+        align-items: center
+        margin-right: 34px
+        transition: all 0.4s
+        &.inst
+            background: linear-gradient(45deg, #FEE411 11.93%, #FEDB16 15.61%, #FEC125 21.74%, #FE983D 29.56%, #FE5F5E 38.66%, #FE2181 47.46%, #9000DC 82.98%)
+        &.vk
+            background: #4169E1
+        &.ok
+            background: #FF9800
+        &:last-child
+            margin-right: 0
+        &:hover
+            opacity: 0.6
+
+.border__bottom
+    height: 1px
+    background: #dee0ee
+
+.footer-bottom
+    padding-top: 48px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+        &:hover
+            color: #FECD05
+    .footer_bott_right
+        display: flex
+    .footer_bott_rlinks
+        a
+            display: block
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0
+    .copyr
+        margin-bottom: 8px
+    .footer_bott_rlinks
+        margin-right: 16px
+
+.banner
+    background: url('images/banner.jpg')
+    color: #fff
+    height: 656px
+    position: relative
+    overflow-x: hidden
+    .banner_title
+        font-weight: 800
+        font-size: 64px
+        line-height: 74px
+        max-width: 730px
+        margin-bottom: 32px
+        span
+            color: #FECD05
+    .banner_sub
+        max-width: 580px
+        font-size: 20px
+        line-height: 145%
+    .container_sub
+        display: flex
+        flex-direction: column
+        height: inherit
+        justify-content: center
+        position: relative
+        z-index: 2
+    .banner_bottom
+        position: absolute
+        bottom: 0
+    .banner__light
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 5px
+
+
+h3
+    font-weight: 800
+    font-size: 48px
+    line-height: 120%
+    text-align: center
+    display: flex
+    justify-content: center
+    margin-bottom: 42px
+    &::before
+        content: url('images/h3.svg')
+        display: block
+        margin-top: 8px
+        margin-right: 14px
+
+.category_main
+    margin-top: 212px
+    margin-bottom: 96px
+.category_grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    .box:first-child
+        grid-row-start: 1
+        grid-row-end: 3
+        .abs_box
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+    .box
+        max-width: 450px
+        background: #F5F7FF
+        border-radius: 2px
+        margin-bottom: 25px
+        position: relative
+        transition: all 0.4s
+        z-index: 1
+        a
+            display: block
+            height: 100%
+        .abs_box
+            position: absolute
+            z-index: -1 !important
+        span
+            font-weight: 700
+            font-size: 24px
+            line-height: 130%
+            text-align: center
+            color: #5D6070
+            display: block
+            margin-bottom: 48px
+            margin-top: 80px
+        &:hover
+            background: #111111
+            span
+                color: #fff
+        .img__category_index
+            display: block
+            margin: 0 auto
+        &:nth-of-type(2)
+            .abs_box
+                top: 16%
+            span
+                margin-top: 48px
+                margin-bottom: 0
+        &:nth-of-type(3)
+            .abs_box
+                top: 16%
+            .img__category_index
+                margin: inherit
+            span
+                margin-top: 72px
+        &:nth-of-type(4)
+            .img__category_index
+                margin: 0 auto
+                margin-top: 26px
+            .abs_box
+                top: 24%
+        &:nth-of-type(5)
+            .abs_box
+                top: 24%
+            .abs_box2
+                position: absolute
+                top: 10%
+                right: 0
+                z-index: -1
+            span
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                height: 320px
+
+
+.competitors_grid
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-gap: 25px
+    margin-bottom: 100px
+
+.competitor_item:nth-child(-n+4) 
+    grid-column: span 3
+
+.competitor_item:nth-child(n + 5):nth-child(-n + 7)
+    grid-column: span 4
+    .competitor__title
+        max-width: 340px
+
+.light__absolute
+    position: absolute
+    right: 0
+    top: 0 
+    path
+        transition: all 0.4s
+
+.competitor_item
+    background: #F5F7FF
+    position: relative
+    border-radius: 2px
+    transition: all 0.4s
+    .comp___wrap
+        padding: 33px 30px 32px 24px
+        color: #4B4B4B
+    .competitor__title
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        max-width: 220px
+        margin-bottom: 12px
+        margin-top: 22px
+        transition: all 0.4s
+    .competitor__sub
+        line-height: 145%
+        transition: all 0.4s
+    &:hover
+        background: #111111  
+        .competitor__title, .competitor__sub
+            color: #fff
+        svg
+            path
+                opacity: 1
+
+.bored__index
+    position: relative
+    .bored_l
+        position: absolute
+        z-index: -1
+        bottom: 0
+        left: 52%
+        transform: translateX(-50%)
+.bored__block
+    background: #FFFFFF
+    box-shadow: 0px 4px 15px rgba(14, 7, 40, 0.1)
+    border-radius: 2px
+    padding: 16px 20px
+    position: absolute
+    span
+        display: block
+        font-size: 20px
+        line-height: 145%
+        color: #4B4B4B
+        text-align: center
+    .bored_block__relative
+        position: relative
+        svg
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: -40px
+    &.check
+        background: #111111
+        padding: 16px 50px
+        span
+            color: #fff
+    &:first-child
+        left: 74px
+        top: 70px
+    &:nth-child(2)
+        left: 13px
+        bottom: 24%
+    &:nth-child(3)
+        right: 0
+        top: 133px
+    &:nth-child(4)
+        right: 34px
+        bottom: 23%
+
+h2
+    font-weight: 800
+    font-size: 48px
+    line-height: 120%
+    text-align: center
+
+.hard_for__you
+    background: #F5F7FF
+    border-radius: 2px
+    overflow: hidden
+    position: relative
+    z-index: 2
+    margin-bottom: 120px
+    h2
+        margin-top: 64px
+
+.harder-flex
+    padding: 44px 72px 80px
+
+.border_babs
+    position: absolute
+    top: 0
+    z-index: -1
+    left: 50%
+    transform: translateX(-50%)
+
+.harder__block
+    margin-bottom: 40px
+    span
+        width: 40px
+        height: 40px
+        background: #111111
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        border-radius: 100%
+        color: #FECD05
+        margin-bottom: 16px
+    p
+        font-weight: 400
+        font-size: 20px
+        line-height: 145%
+        color: #4B4B4B
+
+.services__for__companies
+    background: #F5F7FF
+    padding-top: 100px
+    padding-bottom: 4px
+    .services_subs
+        font-weight: 400
+        font-size: 20px
+        line-height: 145%
+        color: #4B4B4B
+        max-width: 635px
+
+.services__wrap
+    h3
+        text-align: left
+        justify-content: flex-start
+        margin-bottom: 12px
+    
+.services_grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 32px
+    margin-bottom: 120px
+    .service__block
+        height: 550px
+        a
+            display: flex
+            height: 100%
+            justify-content: flex-end
+            flex-direction: column
+            position: relative
+            transition: all 0.4s
+            &:hover
+                background: linear-gradient(0deg, rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5))
+            p
+                font-weight: 700
+                font-size: 24px
+                line-height: 130%
+                color: #111111
+                position: absolute
+                left: 40px
+                bottom: 36px
+                height: 50px
+        &:first-child
+            grid-column: span 2
+
+.brands__company
+    margin-bottom: 88px
+
+.brand__img
+    margin-bottom: 32px
+
+.just-form
+    background: url('images/form.jpg')
+    padding-top: 80px
+    padding-bottom: 100px
+    background-position: center
+
+.just_form__flex
+    display: flex
+    justify-content: space-between
+    padding: 0 64px
+    .form__flex__left
+        max-width: 680px
+        color: #fff
+        a
+            color: #ffffff
+            display: block
+            font-weight: 700
+            font-size: 24px
+            line-height: 130%
+            width: fit-content
+        .span
+            font-size: 12px
+            line-height: 130%
+        h3
+            display: block
+            text-align: left
+            margin-bottom: 16px
+            position: relative
+            &::before
+                display: none
+            span
+                color: #FECD05 
+        p
+            font-weight: 400
+            font-size: 24px
+            line-height: 145%
+            max-width: 555px
+            margin-bottom: 64px
+
+.mail-form__block
+    margin-top: 22px
+
+.h3-form
+    position: relative
+    svg
+        position: absolute
+        left: -54px
+        top: 4px
+
+.form__flex__right
+    .input_f
+        display: block
+        margin-bottom: 36px
+        background: #F5F7FF
+        border: 1px solid #DEE0EE
+        border-radius: 2px
+        width: 400px
+        padding: 14px 16px
+        &::placeholder
+            font-size: 18px
+            line-height: 145%
+            color: #4B4B4B
+
+.form-group input
+    padding: 0
+    height: initial
+    width: initial
+    margin-bottom: 0
+    display: none
+    cursor: pointer
+    background: #FECD05
+
+.form-group label 
+    position: relative
+    cursor: pointer
+    display: flex
+
+.form-group label:before 
+    content: ''
+    -webkit-appearance: none
+    background-color: transparent
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    cursor: pointer
+    background: #FECD05
+    margin-right: 9px
+    min-width: 18px
+    height: 18px
+
+.form-group input:checked + label:after 
+    content: ''
+    display: block
+    position: absolute
+    top: 1px
+    left: 6px
+    width: 6px
+    height: 14px
+    border: solid #111
+    border-radius: 2px
+    border-width: 0 3px 3px 0  
+    transform: rotate(45deg)
+
+.form-group
+    label
+        font-size: 14px
+        line-height: 130%
+        color: #4B4B4B
+        a
+            text-decoration-line: underline
+            color: #FECD05
+
+.submit__form
+    width: 100%
+    border: none
+    background: #FECD05
+    border-radius: 2px
+    width: 400px
+    height: 48px
+    margin-top: 26px
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #111111
+    transition: all 0.4s
+
+.breadcrumbs
+    margin-top: 24px
+    margin-bottom: 24px
+    ul
+        display: flex
+        padding-left: 0
+        margin-bottom: 0
+        li
+            list-style-type: none
+            position: relative
+            display: flex
+            align-items: center
+            margin-left: 14px
+            &::before
+                content: ''
+                display: block
+                width: 6px
+                height: 6px
+                border-radius: 100%
+                background: #DEE0EE
+                margin-right: 12px
+            &:first-child
+                margin-left: 0  
+                &::before
+                    display: none
+            a
+                color: #4B4B4B
+                font-size: 14px
+                line-height: 130%
+                    
+                
+h4
+    font-weight: 700
+    font-size: 24px
+    line-height: 130%
+    color: #5D6070
+
+h5
+    font-weight: 700
+    font-size: 18px
+    line-height: 130%
+    color: #5D6070
+
+.flex__info_products
+    display: flex
+    align-items: center
+    span
+        font-size: 12px
+        line-height: 130%
+        color: #4B4B4B
+        font-size: 12px
+    h4
+        margin-right: 16px
+
+.container__products
+    display: flex
+    margin-top: 32px
+    .container_products__left
+        width: 26%
+        min-width: 26%
+        ul
+            list-style-type: none
+            padding-left: 0
+            margin-bottom: 0
+            li>a
+                display: flex
+                width: 319px
+                height: 39px
+                border-radius: 2px
+                padding: 8px 12px
+                line-height: 145%
+                color: #4B4B4B
+                margin-bottom: 8px
+                transition: all 0.4s
+                &:hover
+                    background: #111111
+                    color: #FECD05
+                &.active
+                    background: #111111
+                    color: #FECD05
+        h5
+            margin-bottom: 32px
+    .prices-slider
+        padding: 20px 24px 
+        border: 1px solid #DEE0EE
+        border-radius: 2px
+        width: 320px
+        margin-top: 80px
+        h5
+            margin-bottom: 12px
+        #example_2_input_from, #example_2_input_to
+            width: 120px
+            height: 48px
+            border: 1px solid #DEE0EE
+            border-radius: 2px
+            padding-left: 16px
+        .border-filter
+            width: 16px
+            height: 1px
+            background: #DEE0EE
+        .flex__inputs
+            display: flex
+            justify-content: space-between
+            align-items: center
+        .irs--round .irs-min, .irs--round .irs-max
+            display: none
+        .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single
+            display: none
+        .irs--round .irs-bar
+            background: #FECD05
+        .irs--round .irs-handle
+            border: 1px solid #DEE0EE
+            box-shadow: none
+            width: 16px
+            height: 16px 
+            top: 29px
+        .irs--round
+            margin-top: -12px
+
+.container__products__right
+    width: 74%
+    .sorts
+        display: flex
+        align-items: center
+    .sorts__title
+        color: #BEBFC7
+        font-size: 14px
+        line-height: 130%
+        margin-right: 24px
+    .sorts__pop_rating_price
+        a
+            color: #4B4B4B
+            font-size: 14px
+            line-height: 130%
+            margin-right: 24px
+            transition: all 0.4s
+            &.active
+                color: #EEBF00
+                border-bottom: 1px dashed #EEBF00
+            &:hover
+                color: #EEBF00
+    .sorts__products_grid
+        display: flex
+    .products__change
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #F5F7FF
+        margin-left: 8px
+        border-radius: 4px
+        .svg__g
+            transition: all 0.4s
+        &.active
+            .svg__g
+                fill: #EEBF00
+        &:hover
+            .svg__g
+                fill: #EEBF00
+    .products__sorts
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.container_products
+    margin-top: 28px
+
+.product
+    border: 1px solid #F5F7FF
+    border-radius: 2px
+    margin-bottom: 20px
+    .product-image
+        position: relative
+        .svgpr
+            position: absolute
+            top: 8px
+            right: 8px
+            width: 32px
+            height: 32px
+            background: #F5F7FF
+            border-radius: 4px
+            display: flex
+            cursor: pointer
+            justify-content: center
+            align-items: center
+            svg path
+                transition: all 0.4s
+            &:hover
+                svg path
+                    fill:#EEBF00
+    .discount
+        position: absolute
+        bottom: 8px
+        left: 8px
+        background: #FF371C
+        border-radius: 2px
+        width: 43px
+        height: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        font-size: 12px
+        color: #FFFFFF
+
+.product__botom
+    padding: 16px 16px 26px 16px
+    .products__rating_flex
+        display: flex
+    span
+        font-weight: 400
+        font-size: 12px
+        line-height: 21px
+        display: block
+        margin-left: 5px
+    .product_rating_stars
+        display: flex
+        align-items: center
+        svg
+            margin-right: 5px
+            &.active
+                path
+                    fill: #FFC046
+    .title__product_block
+        font-size: 16px
+        line-height: 145%
+        margin-top: 6px
+        margin-bottom: 24px
+        color: #5D6070
+        transition: all 0.4s
+        display: block
+        &:hover
+            color: #EEBF00
+    .span__price
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        margin-left: 0
+        display: flex
+        align-items: center
+        color: #111111
+    .price__number, .r
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        color: #111111
+    .r
+        margin-left: 0
+    .btn-buy
+        width: 129px
+        height: 40px
+        background: #FECD05
+        border-radius: 2px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #111111
+        margin-top: 8px
+        transition: all 0.4s
+        &:hover
+            background: #FFC046
+
+.pagination_ul
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    margin-top: 20px
+    li
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 1px solid #F5F7FF
+            width: 32px
+            height: 32px
+            border-radius: 2px
+            margin-right: 8px
+            color: #4B4B4B
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            transition: all 0.4s
+            &:hover
+                border: 1px solid #EEBF00
+                color: #EEBF00
+        &.active
+            a
+                border: 1px solid #EEBF00
+                color: #EEBF00
+
+.recomended__products
+    margin-bottom: 100px
+    h2
+        text-align: left
+        font-weight: 800
+        font-size: 32px
+        line-height: 120%
+        color: #5D6070
+        margin-bottom: 40px
+        margin-top: 100px
+
+.slick-track
+    display: flex
+    justify-content: space-between
+.rec__slider
+    overflow: hidden
+
+.slick-slide
+    margin: 0 10px
+
+.slick-list    
+    margin: 0 -10px
+
+.rec-wrapper
+    position: relative
+    .arrow_sl
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+        box-shadow: 0px 3px 15px rgba(6, 19, 40, 0.13)
+        background: #fff
+        cursor: pointer
+        position: absolute
+        top: 42%
+        transform: translateY(-50%)
+        z-index: 3
+        svg
+            path
+                transition: all 0.4s
+        &:hover
+            svg
+                path
+                    fill: #FECD05
+    .arrow_p
+        left: 16px
+    .arrow_n
+        right: 16px
+
+.product__page
+    h1
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+        color: #5D6070
+        margin-bottom: 16px
+
+.product__page__flex, .product__page__strsrev
+    display: flex
+    align-items: center
+
+.product__page__flex
+    margin-bottom: 40px
+
+.product__page__strsrev
+    margin-right: 42px
+    .active
+        path
+            fill: #FFC046
+    .prd_page_rev
+        font-weight: 400
+        font-size: 12px
+        line-height: 22px
+        color: #4B4B4B
+    .prd_page_strs
+        margin-right: 8px
+
+.prd__comparision
+    margin-right: 42px
+    span
+        font-size: 12px
+        line-height: 130%
+        color: #5D6070
+
+.prd__artcl
+    font-size: 12px
+    line-height: 130%
+    color: #4B4B4B
+
+.prd__grid
+    display: grid
+    grid-template-columns: 1.07fr 1fr
+    grid-template-rows: 1fr
+    grid-gap: 40px
+
+.product__image
+    display: flex
+    margin-bottom: 80px
+
+.product_img__side
+    margin-right: 20px
+    img
+        width: 79px
+        height: 78px 
+        display: block
+        border-radius: 4px
+    .prd-sid__img
+        border: 1px solid transparent
+        border-radius: 4px
+        margin-bottom: 24px
+        cursor: pointer
+        &.active
+            border: 1px solid #0063FF
+            box-sizing: border-box
+
+.product_img__main
+    img
+        max-width: 600
+        max-height: 500
+        object-fit: contain
+
+.flex__tabs_nav
+    display: flex
+    justify-content: space-between
+    border-bottom: 2px solid #DEE0EE
+    .tab-nav
+        color: #5D6070
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        cursor: pointer
+        position: relative
+        span
+            padding: 16px
+            padding-bottom: 12px
+            padding-top: 0
+            display: block
+        &.active
+            color: #EEBF00
+            &::before
+                content: ''
+                display: block
+                height: 2px
+                width: 100%
+                background: #EEBF00
+                position: absolute
+                bottom: -2px
+            &::after
+                content: url('images/afterprod.svg')
+                position: absolute
+                left: 45%
+                bottom: -7px
+
+.tab-content
+    margin-top: 48px
+    .tab__title
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        color: #4B4B4B
+        margin-bottom: 16px
+    p
+        font-weight: 400
+        font-size: 18px
+        line-height: 145%
+        color: #4B4B4B
+        margin-bottom: 48px
+
+.attr-main
+    width: 78%
+
+.prd-grid__right
+    display: flex
+    justify-content: space-between
+
+.atrr__flex
+    display: flex
+    justify-content: space-between
+    color: #4B4B4B
+    margin-bottom: 12px
+    background: url('images/dots.png')
+    background-repeat: repeat-x
+    background-position: 0 15px
+    .attr__value
+        font-weight: 500
+        background: #ffffff
+    .attr__name
+        background: #fff
+
+.attr__main_r
+    width: 348px
+    .attr__name
+        max-width: 120px
+.attr_r__title
+    font-weight: 700
+    font-size: 18px
+    line-height: 130%
+    color: #4B4B4B
+    margin-bottom: 16px
+
+
+.card__number
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    margin-top: 32px
+    margin-bottom: 16px
+
+.card__number input 
+    width: 56px
+    height: 40px
+    border: none
+    outline: none
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+    background:#F5F7FF
+    font-weight: bold
+    font-size: 18px
+    font-weight: 700
+    line-height: 22px
+    color: #6F6167
+    text-align: center
+ 
+.card__number span 
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    border: none
+    background: #F5F7FF
+    width: 56px
+    height: 40px
+    display: block
+    position: relative
+    -webkit-transition: all .5s ease-in-out
+    -o-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+
+.card__number span:hover
+    cursor: pointer
+
+.card__minus::after 
+    content: ''
+    position: absolute
+    height: 2px
+    width: 16px
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    display: block
+    background: #000
+
+  
+  
+.card__plus::before
+    content: ''
+    position: absolute
+    height: 2px
+    width: 16px
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    display: block
+    background: #000
+
+  
+.card__plus::after 
+    content: ''
+    position: absolute
+    width: 2px
+    height: 16px
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    display: block
+    background: #000
+
+  
+span.card__plus , span.card__minus
+    transition: all 0.4s
+    &:hover
+        background: #FECD05
+    &::before
+        background: #BEBFC7
+    &::after
+        background: #BEBFC7
+
+.side__bar__rightprice
+    width: 215px
+    max-height: 334px 
+    border: 1px solid #DEE0EE
+    border-radius: 4px
+    padding: 24px 26px
+    .price_sht
+        width: 160px
+        height: 70px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        border-radius: 4px
+        border: 1px solid #DEE0EE
+        margin-bottom: 16px
+        .prc
+            font-weight: 700
+            font-size: 24px
+            line-height: 130%
+            margin-bottom: 4px
+            color: #5D6070
+        .amounet
+            font-weight: 700
+            font-size: 12px
+            line-height: 130%
+            color: #5D6070
+        &.active
+            border: 1px solid #EEBF00
+            background: #F5F7FF
+            .prc
+                background: #F5F7FF
+
+.btn_side
+    width: 168px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #FECD05
+    border-radius: 2px
+    font-weight: 600
+    font-size: 14px
+    line-height: 120%
+    color: #111111
+    transition: all 0.4s
+    &:hover
+        background: #EEBF00
+
+.slide-poducts
+    overflow: hidden
+.slide-product-wrap
+    position: relative
+    .overlay
+        position: absolute
+        right: 0
+        z-index: 3
+
+.slide-poducts
+    .product
+        max-width: 245px
+        margin-right: 20px
+.flickity-button
+    display: none
+
+
+.slide-product-wrap
+    margin-top: 120px
+    width: 112.8%
+
+.slide_product__tilte
+    font-weight: 800
+    font-size: 32px
+    line-height: 120%
+    color: #5D6070
+    margin-bottom: 40px
+
+.history_of__company
+    margin-top: 48px
+
+.history__scroll
+    display: flex
+    overflow-x: scroll
+    margin-bottom: 118px
+    padding-bottom: 42px
+    &::-webkit-scrollbar
+        width: 8px              
+    &::-webkit-scrollbar-track 
+        background: #F5F7FF
+        border-radius: 8px
+        border: 5px solid #fff
+    &::-webkit-scrollbar-thumb
+        background-color: #FECD05
+        border-radius: 10px
+        border: 5px solid #fff
+        border-right: 3px solid #F5F7FF
+        border-left: 3px solid #F5F7FF
+
+    .history__block
+        min-width: 440px
+        margin-right: 40px
+        .history__date
+            font-weight: 700
+            font-size: 24px
+            line-height: 130%
+            margin-bottom: 16px
+        .history__descr
+            font-weight: 400
+            font-size: 16px
+            line-height: 145%
+            color: #4B4B4B
+
+
+@media( max-width: 1024px )
+    .header_bottom_flex .menu-flex ul
+        margin-bottom: 0
+    .header_bottom_flex
+        .menu-additional
+            ul
+                display: none
+                flex-direction: column
+                position: absolute
+                background: #fff
+                top: 40px
+                padding: 12px
+                width: 200px
+                left: -110%
+                border: 1px solid #000
+                text-align: center
+                a
+                    width: inherit !important
+                    height: inherit !important
+                    background: none !important
+                    font-weight: 500 !important
+                    font-size: 16px !important
+                    color: #5D6070 !important
+                    display: block
+                    margin-bottom: 4px
+                    transition: all 0.4s
+                    &:hover
+                        color: #FECD05 !important
+                    .active
+                        color: #FECD05 !important
+    .header_bottom_flex .menu-flex ul li:first-child a
+        width: 140px
+    .header_bottom_flex .menu-flex ul a
+        margin-right: 58px
+    .has-sub.menu-additional span
+        cursor: pointer
+        transition: all 0.4s
+        &:hover
+            color: #FECD05
+    .banner 
+        background-position: center
+        .banner__light
+            left: 80px
+    .category_main
+        margin-top: 142px
+    .category_grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px
+    .category_grid .box
+        margin-bottom: 0
+    .competitors_main
+        margin-top: 120px
+    .competitors_grid
+        grid-template-columns: repeat(6, 2fr)
+        grid-gap: 20px
+    .competitor_item:nth-child(-n+4), .competitor_item:nth-child(n + 5):nth-child(-n + 7)
+        grid-column: span 2 
+    .competitor_item:nth-child(5)
+        grid-column: span 4 !important
+    .competitor_item:nth-child(n+6)
+        grid-column: span 3 !important
+    .competitor_item .competitor__title
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+    .competitor__sub
+        font-weight: 400
+        font-size: 14px
+        line-height: 130%
+    .competitor_item .comp___wrap
+        padding: 33px 24px 32px 24px
+    .competitor_item .competitor__title
+        max-width: 100%
+    .bored__index .bored_l
+        zoom: 0.7
+    .bored__block:nth-child(2)
+        left: 0
+    .bored__block:nth-child(4)
+        right: 32%
+        bottom: -2%
+        z-index: 3
+    .hard_for__you h2
+        width: 68%
+        margin: auto
+        margin-top: 65px
+    .services_grid
+        grid-template-columns: repeat(4, 1fr)
+    .services_grid .service__block:first-child
+        grid-column: span 4
+    .services_grid .service__block
+        grid-column: span 2
+    .just_form__flex
+        padding-right: 0
+    .form__flex__right .input_f
+        width: 332px
+    .submit__form
+        width: 332px
+    .just-form
+        padding-top: 72px
+        padding-bottom: 72px
+    .just_form__flex .form__flex__left p
+        font-size: 20px
+        line-height: 145%
+        max-width: 380px
+    .just_form__flex .form__flex__left h3
+        margin-bottom: 22px
+    .just_form__flex .form__flex__left p
+        margin-bottom: 58px
+    .mail-form__block
+        margin-top: 14px
+    .just_form__flex
+        align-items: center
+    .just-form
+        background-position: 46% center
+    .footer .footer-top, .footer-bottom
+        padding-bottom: 32px
+    .container__products .container_products__left ul li > a
+        width: 162px
+        font-size: 14px
+        line-height: 130%
+        height: inherit
+    .container__products .prices-slider
+        width: 162px
+        padding: 16px 12px 12px 12px
+    .container__products .prices-slider #example_2_input_from, .container__products .prices-slider #example_2_input_to
+        width: 60px
+        height: 40px
+        font-size: 12px
+        line-height: 130%
+        padding-left: 6px
+    .container__products .prices-slider .border-filter
+        width: 8px
+    .container__products .prices-slider
+        margin-top: 58px
+    .container__products .container_products__left
+        width: 21%
+        min-width: 21%
+    .container__products__right
+        width: 79%
+    .attr__right
+        display: none
+    .prd-grid__right
+        justify-content: flex-end
+    .prd__grid
+        grid-template-columns: 1.8fr 1fr

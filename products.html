@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container_sub">
+                <div class="header-top_flex">
+                    <div class="header_top_left">
+                        <div class="time_header_title">
+                            Время работы:
+                        </div>
+                        <div class="time_header">
+                            ПН-ПТ: 08:00  —  17:00
+                        </div>
+                    </div>
+
+                    <div class="header_top_right">
+                        <a class='tel' href="mailto:+88005553535">8 800 555 35 35</a>
+                        <a class='callbck' href="javascript:void(0);">Заказать звонок</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container_sub">
+                <div class="header_bottom_flex">
+                    <a href="/">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+
+                    <div class="menu-flex">
+                        <ul>
+                            <li>
+                                <a href="/products.html">
+                                    <svg width="17" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.333h15c.276 0 .5-.298.5-.666C16.5.299 16.276 0 16 0H1C.724 0 .5.299.5.667c0 .368.224.666.5.666ZM10.682 6.667H.985c-.268 0-.485.298-.485.666C.5 7.701.717 8 .985 8h9.697c.268 0 .485-.299.485-.667 0-.368-.217-.666-.485-.666Z" fill="#111"/>
+                                    </svg>
+                                    <span>Каталог</span>
+                                </a>
+                            </li>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Оплата и доставка</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+
+                    </div>
+
+
+                        <a class="basket" href="">
+                            <div class="basket__wrap">
+                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.128 4.286H6.022L5.219.673A.874.874 0 0 0 4.364 0H.873A.868.868 0 0 0 0 .857c0 .472.393.857.873.857H3.66L6.35 13.78c-1.383.287-2.422 1.495-2.422 2.935 0 1.655 1.37 3 3.055 3h12.437c.48 0 .872-.385.872-.857A.868.868 0 0 0 19.42 18H6.982c-.72 0-1.31-.579-1.31-1.286 0-.707.59-1.285 1.31-1.285h12.655a.876.876 0 0 0 .82-.566l3.491-9.429a.852.852 0 0 0-.104-.784.888.888 0 0 0-.716-.364Zm-4.102 9.428H8.121L6.401 6H21.88l-2.854 7.714ZM7.418 24c.724 0 1.31-.576 1.31-1.286 0-.71-.586-1.285-1.31-1.285-.723 0-1.309.575-1.309 1.285S6.695 24 7.42 24ZM17.019 24c.723 0 1.309-.576 1.309-1.286 0-.71-.586-1.285-1.31-1.285-.722 0-1.309.575-1.309 1.285S16.297 24 17.02 24Z" fill="#111"/>
+                                </svg>
+                                <span>3</span>
+                            </div>
+                            Корзина
+                        </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="products__main">
+        <div class="container_sub">
+            <div class="breadcrumbs">
+                <ul>
+                   <li><a href="/">Главная</a></li>
+                   <li><a href="/products.html">Каталог</a></li> 
+                   <li><a href="">Аксессуары для кабеля</a></li> 
+                </ul>
+            </div>
+
+            <div class="flex__info_products">
+                <h4>Аксессуары для кабеля</h4>
+                <span><span class="numbers">1 150</span> товаров</span>
+            </div>
+
+            <div class="container__products">
+                <div class="container_products__left">
+                    <h5>Категория</h5>
+                    <ul>
+                        <li><a href="">Бирки кабельные</a></li>
+                        <li><a href="">Болтовые соединители проводов</a></li>
+                        <li><a href="">Держатели маркировки</a></li>
+                        <li><a href="">Зажимы для натяжения троса</a></li>
+                        <li><a href="">Кабельные втулки</a></li>
+                        <li><a href="">Кабельные муфты</a></li>
+                        <li><a href="">Кабельные наконечники и гильзы</a></li>
+                    </ul>
+
+                    <div class="prices-slider">
+                        <h5>Цена</h5>
+                        <div class="flex__inputs">
+                            <input type="text" id="example_2_input_from">
+                            <div class="border-filter"></div>
+                            <input type="text" id="example_2_input_to">
+                        </div>
+                        <input type="text" id="example_2">
+                    </div>
+
+                </div>
+
+                <div class="container__products__right">
+                    <div class="products__sorts">
+                        <div class="sorts">
+                            <div class="sorts__title">Сортировать по:</div>
+                            <div class="sorts__pop_rating_price">
+                                <a href="" class='active'>Популярности</a>
+                                <a href="">Рейтингу</a>
+                                <a href="">Цене</a>
+                            </div>
+                        </div>
+
+                        <div class="sorts__products_grid">
+                            <a href="javascript:void(0)" class="four_rounds products__change active">
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g class='svg__g' clip-path="url(#a)" fill="#BEBFC7">
+                                    <path d="M4.667 0h-2A2.667 2.667 0 0 0 0 2.667v2a2.667 2.667 0 0 0 2.667 2.666h2a2.667 2.667 0 0 0 2.666-2.666v-2A2.667 2.667 0 0 0 4.667 0ZM6 4.667A1.333 1.333 0 0 1 4.667 6h-2a1.333 1.333 0 0 1-1.334-1.333v-2a1.333 1.333 0 0 1 1.334-1.334h2A1.333 1.333 0 0 1 6 2.667v2ZM13.333 0h-2a2.667 2.667 0 0 0-2.667 2.667v2a2.667 2.667 0 0 0 2.667 2.666h2A2.667 2.667 0 0 0 16 4.667v-2A2.667 2.667 0 0 0 13.333 0Zm1.333 4.667A1.334 1.334 0 0 1 13.333 6h-2A1.333 1.333 0 0 1 10 4.667v-2a1.333 1.333 0 0 1 1.333-1.334h2a1.333 1.333 0 0 1 1.333 1.334v2ZM4.667 8.666h-2A2.667 2.667 0 0 0 0 11.333v2A2.667 2.667 0 0 0 2.667 16h2a2.667 2.667 0 0 0 2.666-2.667v-2a2.667 2.667 0 0 0-2.666-2.667ZM6 13.333a1.333 1.333 0 0 1-1.333 1.333h-2a1.334 1.334 0 0 1-1.334-1.333v-2A1.333 1.333 0 0 1 2.667 10h2A1.333 1.333 0 0 1 6 11.333v2ZM13.333 8.666h-2a2.667 2.667 0 0 0-2.667 2.667v2A2.667 2.667 0 0 0 11.333 16h2A2.667 2.667 0 0 0 16 13.333v-2a2.667 2.667 0 0 0-2.667-2.667Zm1.333 4.667a1.334 1.334 0 0 1-1.333 1.333h-2A1.333 1.333 0 0 1 10 13.333v-2A1.333 1.333 0 0 1 11.333 10h2a1.333 1.333 0 0 1 1.333 1.333v2Z"/></g>
+                                    <defs><clipPath id="a">
+                                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                                    </clipPath></defs>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="three__stroke products__change">
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g class='svg__g' clip-path="url(#a)" fill="#BEBFC7">
+                                    <path d="M15.333 7.333H.667a.667.667 0 1 0 0 1.334h14.666a.667.667 0 1 0 0-1.333ZM15.333 2.667H.667A.667.667 0 0 0 .667 4h14.666a.667.667 0 1 0 0-1.333ZM15.333 12H.667a.667.667 0 0 0 0 1.333h14.666a.667.667 0 1 0 0-1.333Z"/></g><defs></defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                            </a>
+                            <a href="javascript:void(0)" class="stroke__dots products__change">
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g class='svg__g' clip-path="url(#a)" fill="#BEBFC7">
+                                    <path d="M4.667 4h10.666a.667.667 0 1 0 0-1.333H4.667a.667.667 0 0 0 0 1.333ZM15.333 7.333H4.667a.667.667 0 1 0 0 1.334h10.666a.667.667 0 1 0 0-1.333ZM15.333 12H4.667a.666.666 0 1 0 0 1.333h10.666a.667.667 0 1 0 0-1.333ZM1.333 4.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM1.333 9.333a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM1.333 14a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container_products row">
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="product">
+                                <div class="product-image">
+                                    <a href="">
+                                        <img src="images/catalog/product.jpg" alt="">
+                                    </a>
+                                        <div class="svgpr">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="discount">-15%</div>
+                                </div>
+
+                                <div class="product__botom">
+                                    <div class="products__rating_flex">
+                                        <div class="product_rating_stars">
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+
+                                        <span> 450 отзывов</span>
+                                    </div>
+                                    
+                                    <a class='title__product_block' href="">
+                                        Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                    </a>
+
+                                    <span class="span__price">от 
+                                        <span class="price__number">190</span>
+                                       <span class="r">₽</span>
+                                    </span>
+
+                                    <a href="" class="btn-buy">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="product">
+                                <div class="product-image">
+                                    <a href="">
+                                        <img src="images/catalog/product.jpg" alt="">
+                                    </a>
+                                        <div class="svgpr">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="discount">-15%</div>
+                                </div>
+
+                                <div class="product__botom">
+                                    <div class="products__rating_flex">
+                                        <div class="product_rating_stars">
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+
+                                        <span> 450 отзывов</span>
+                                    </div>
+                                    
+                                    <a class='title__product_block' href="">
+                                        Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                    </a>
+
+                                    <span class="span__price">от 
+                                        <span class="price__number">190</span>
+                                       <span class="r">₽</span>
+                                    </span>
+
+                                    <a href="" class="btn-buy">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="product">
+                                <div class="product-image">
+                                    <a href="">
+                                        <img src="images/catalog/product.jpg" alt="">
+                                    </a>
+                                        <div class="svgpr">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="discount">-15%</div>
+                                </div>
+
+                                <div class="product__botom">
+                                    <div class="products__rating_flex">
+                                        <div class="product_rating_stars">
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+
+                                        <span> 450 отзывов</span>
+                                    </div>
+                                    
+                                    <a class='title__product_block' href="">
+                                        Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                    </a>
+
+                                    <span class="span__price">от 
+                                        <span class="price__number">190</span>
+                                       <span class="r">₽</span>
+                                    </span>
+
+                                    <a href="" class="btn-buy">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="product">
+                                <div class="product-image">
+                                    <a href="">
+                                        <img src="images/catalog/product.jpg" alt="">
+                                    </a>
+                                        <div class="svgpr">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="discount">-15%</div>
+                                </div>
+
+                                <div class="product__botom">
+                                    <div class="products__rating_flex">
+                                        <div class="product_rating_stars">
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+
+                                        <span> 450 отзывов</span>
+                                    </div>
+                                    
+                                    <a class='title__product_block' href="">
+                                        Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                    </a>
+
+                                    <span class="span__price">от 
+                                        <span class="price__number">190</span>
+                                       <span class="r">₽</span>
+                                    </span>
+
+                                    <a href="" class="btn-buy">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="product">
+                                <div class="product-image">
+                                    <a href="">
+                                        <img src="images/catalog/product.jpg" alt="">
+                                    </a>
+                                        <div class="svgpr">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+                                        <div class="discount">-15%</div>
+                                </div>
+                                <div class="product__botom">
+                                    <div class="products__rating_flex">
+                                        <div class="product_rating_stars">
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                            <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                            </svg>
+                                        </div>
+
+                                        <span> 450 отзывов</span>
+                                    </div>
+                                    
+                                    <a class='title__product_block' href="">
+                                        Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                    </a>
+
+                                    <span class="span__price">от 
+                                        <span class="price__number">190</span>
+                                       <span class="r">₽</span>
+                                    </span>
+
+                                    <a href="" class="btn-buy">В корзину</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <ul class="pagination_ul">
+                        <li class='active'>
+                            <a href="">1</a>
+                        </li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">...</a></li>
+                        <li><a href="">16</a></li>
+                    </ul>
+
+                    <div class="recomended__products">
+                        <h2>Рекомендуемые товары</h2>
+
+                        <div class="rec-wrapper">
+                            <div class="main-arrow-container"></div>
+                        <div class="rec__slider">
+                            <div class="slide">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="">
+                                            <img src="images/catalog/product.jpg" alt="">
+                                        </a>
+                                            <div class="svgpr">
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+                                            <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product__botom">
+                                        <div class="products__rating_flex">
+                                            <div class="product_rating_stars">
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+
+                                            <span> 450 отзывов</span>
+                                        </div>
+                                        
+                                        <a class='title__product_block' href="">
+                                            Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                        </a>
+
+                                        <span class="span__price">от 
+                                            <span class="price__number">190</span>
+                                        <span class="r">₽</span>
+                                        </span>
+
+                                        <a href="" class="btn-buy">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="">
+                                            <img src="images/catalog/product.jpg" alt="">
+                                        </a>
+                                            <div class="svgpr">
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+                                            <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product__botom">
+                                        <div class="products__rating_flex">
+                                            <div class="product_rating_stars">
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+
+                                            <span> 450 отзывов</span>
+                                        </div>
+                                        
+                                        <a class='title__product_block' href="">
+                                            Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                        </a>
+
+                                        <span class="span__price">от 
+                                            <span class="price__number">190</span>
+                                        <span class="r">₽</span>
+                                        </span>
+
+                                        <a href="" class="btn-buy">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="">
+                                            <img src="images/catalog/product.jpg" alt="">
+                                        </a>
+                                            <div class="svgpr">
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+                                            <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product__botom">
+                                        <div class="products__rating_flex">
+                                            <div class="product_rating_stars">
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+
+                                            <span> 450 отзывов</span>
+                                        </div>
+                                        
+                                        <a class='title__product_block' href="">
+                                            Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                        </a>
+
+                                        <span class="span__price">от 
+                                            <span class="price__number">190</span>
+                                        <span class="r">₽</span>
+                                        </span>
+
+                                        <a href="" class="btn-buy">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="">
+                                            <img src="images/catalog/product.jpg" alt="">
+                                        </a>
+                                            <div class="svgpr">
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+                                            <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product__botom">
+                                        <div class="products__rating_flex">
+                                            <div class="product_rating_stars">
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+
+                                            <span> 450 отзывов</span>
+                                        </div>
+                                        
+                                        <a class='title__product_block' href="">
+                                            Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                        </a>
+
+                                        <span class="span__price">от 
+                                            <span class="price__number">190</span>
+                                        <span class="r">₽</span>
+                                        </span>
+
+                                        <a href="" class="btn-buy">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product">
+                                    <div class="product-image">
+                                        <a href="">
+                                            <img src="images/catalog/product.jpg" alt="">
+                                        </a>
+                                            <div class="svgpr">
+                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.25 1.625v12.75a.625.625 0 1 1-1.25 0V1.625a.625.625 0 1 1 1.25 0ZM8.25 4.625v9.75a.625.625 0 1 1-1.25 0v-9.75a.625.625 0 1 1 1.25 0ZM2.625 7c.345 0 .625.28.625.625v6.75a.625.625 0 1 1-1.25 0v-6.75C2 7.28 2.28 7 2.625 7Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+                                            <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product__botom">
+                                        <div class="products__rating_flex">
+                                            <div class="product_rating_stars">
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg class='active' width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                                <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69L7.05.927Z" fill="#BEBFC7"/>
+                                                </svg>
+                                            </div>
+
+                                            <span> 450 отзывов</span>
+                                        </div>
+                                        
+                                        <a class='title__product_block' href="">
+                                            Кабельная бирка REXANT "У-134 (Квадрат)" 100 штук 07-6234
+                                        </a>
+
+                                        <span class="span__price">от 
+                                            <span class="price__number">190</span>
+                                        <span class="r">₽</span>
+                                        </span>
+
+                                        <a href="" class="btn-buy">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<footer class="footer">
+        <div class="container_sub">
+            <div class="footer-top">
+                <div class="footer-block">
+                    <div class="footer_subtitle">Каталог</div>
+                    <ul>
+                        <li><a href="">Световое оборудование</a></li>
+                        <li><a href="">Электроустановка</a></li>
+                        <li><a href="">Аксессуары для кабеля</a></li>
+                        <li><a href="">Арматура СИП</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <div class="footer_subtitle">Разделы</div>
+                    <ul>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Оплата и доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <div class="footer_subtitle">Контакты</div>
+                    <a href="tel:+79372705555" class="tel">+7 (937) 270-55-55</a>
+                    <a href="javascript:void(0);" class="callb_f">Заказать звонок</a>
+                    <a href="mailto:zakaz@molottok.com" class="email_f">zakaz@molottok.com</a>
+                    <p class="address">
+                        433508, Россия, Ульяновская область, Димитровград, ул.Куйбышева, 142
+                    </p>
+                    <div class="social__media inst">
+                        <a href="" class='social-link inst'>
+                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.988.188h-5.97A4.828 4.828 0 0 0 .195 5.013v5.968a4.828 4.828 0 0 0 4.825 4.825h5.969a4.828 4.828 0 0 0 4.825-4.825V5.013A4.828 4.828 0 0 0 10.988.188Zm3.08 10.8a3.09 3.09 0 0 1-3.087 3.087H5.013a3.09 3.09 0 0 1-3.088-3.087v-5.97a3.09 3.09 0 0 1 3.088-3.087h5.968A3.09 3.09 0 0 1 14.07 5.02v5.969Z" fill="#fff"/>
+                                <path d="M8 4.006A4.001 4.001 0 0 0 4.006 8c0 2.2 1.794 3.994 3.994 3.994S11.994 10.2 11.994 8 10.2 4.006 8 4.006Zm0 6.42A2.427 2.427 0 0 1 5.575 8 2.427 2.427 0 0 1 8 5.575 2.427 2.427 0 0 1 10.425 8 2.427 2.427 0 0 1 8 10.425ZM12.298 4.444a.675.675 0 1 0-.216-1.332.675.675 0 0 0 .216 1.332Z" fill="#fff"/>
+                            </svg>
+                        </a>
+                        <a href="" class='social-link vk'>
+                            <svg width="20" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.222 12.262c-.466.065-2.742 0-2.86 0a2.236 2.236 0 0 1-1.58-.626c-.48-.462-.91-.97-1.378-1.454a3.816 3.816 0 0 0-.45-.406c-.374-.289-.745-.223-.921.218a8.597 8.597 0 0 0-.288 1.46c-.03.448-.314.728-.816.759-.31.016-.622.021-.929.014a7.092 7.092 0 0 1-3.216-.794 8.76 8.76 0 0 1-2.751-2.406C2.82 7.478 1.85 5.777.985 4.022.94 3.934.053 2.047.031 1.958c-.08-.298 0-.584.245-.682.157-.06 3.08 0 3.13 0a1.024 1.024 0 0 1 .981.706 15.236 15.236 0 0 0 2.197 3.85c.128.157.278.294.445.408.238.162.464.105.562-.17.116-.38.185-.774.204-1.172.016-.789 0-1.309-.044-2.096-.03-.506-.207-.95-.953-1.091-.229-.04-.249-.23-.102-.418C7.004.9 7.424.838 7.895.814c.701-.04 1.403-.012 2.105 0h.153c.305 0 .61.03.909.093a.836.836 0 0 1 .667.746c.036.199.051.401.046.603-.019.862-.06 1.722-.07 2.584a4.43 4.43 0 0 0 .093 1.016c.1.458.415.573.727.242.405-.428.777-.886 1.111-1.37A13.873 13.873 0 0 0 15.091 1.9c.204-.511.364-.624.909-.624h3.102a1.84 1.84 0 0 1 .545.073.471.471 0 0 1 .326.61c-.153.679-.52 1.259-.91 1.817-.63.895-1.296 1.766-1.941 2.646a3.622 3.622 0 0 0-.224.363c-.244.439-.225.684.128 1.05.563.578 1.165 1.121 1.709 1.718.399.433.759.901 1.076 1.398.398.616.153 1.205-.59 1.31Z" fill="#fff"/>
+                            </svg>
+                        </a>
+                        <a href="" class='social-link ok'>
+                            <svg width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 .58a4.248 4.248 0 1 0 0 8.496A4.248 4.248 0 0 0 7 .579Zm0 6.365A2.118 2.118 0 1 1 7 2.71a2.118 2.118 0 0 1 0 4.235Z" fill="#fff"/>
+                                <path d="M13.261 9.727a1.44 1.44 0 0 0-1.962-.552c-2.893 1.621-5.705 1.621-8.598 0a1.447 1.447 0 0 0-1.41 2.526c.948.539 1.962.954 3.016 1.236l-2.046 2.046a1.434 1.434 0 0 0 2.027 2.028L7 14.289 9.712 17a1.434 1.434 0 0 0 2.027-2.027l-2.046-2.046a12.825 12.825 0 0 0 3.017-1.236 1.441 1.441 0 0 0 .551-1.964Z" fill="#fff"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border__bottom"></div>
+        <div class="container_sub">
+            <div class="footer-bottom">
+                <div class="footer_bott_left">
+                    <div class="copyr">© МагияТока, 2015-2022</div>
+                    <a href="" class="privacy">Политика конфиденциальности</a>
+                </div>
+
+                <div class="footer_bott_right">
+                    <div class="footer_bott_rlinks">
+                        <a class="kontur-copy__link" href="http://kontur-lite.ru/" title="Создание сайтов в Новосибирске" target="_blank">Создание сайтов</a>
+                        <a class="kontur-copy__link" href="http://kontur-promo.ru/prodvizhenie-sajjtov" title="Продвижение сайтов" target="_blank">Продвижение сайтов</a>
+                    </div>
+                    <img src="images/made.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="https:////cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
