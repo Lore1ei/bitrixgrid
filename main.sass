@@ -1,5 +1,7 @@
 *
     box-sizing: border-box
+    &:focus
+        outline: none
 
 body
     font-family: Montserrat
@@ -8,6 +10,12 @@ body
 a
     text-decoration: none
     transition: all 0.4s
+
+ul
+    list-style-type: none !important
+
+body
+    overflow-x: hidden
 
 img
     max-width: 100%
@@ -107,12 +115,13 @@ h1, h2, h3, h4, h5, h6
     .menu-flex
         display: flex
         align-items: center
-        ul
+        ul:nth-child(2)
             display: flex
             align-items: center
             justify-content: space-between
             padding-left: 0
             list-style: none
+            margin-bottom: 0
             li:first-child
                 a
                     width: 196px
@@ -127,11 +136,14 @@ h1, h2, h3, h4, h5, h6
                     line-height: 17px
                     color: #111111
                     &:hover
-                        background: lighten(#FECD05, 10%)
+                        background: #EEBF00
                     svg
                         margin-right: 10px
                     &.active
-                        color: #5D6070        
+                        color: #5D6070 
+                        background: #EEBF00
+                    &::after
+                        display: none
             li:last-child
                 a
                     margin-right: 0
@@ -139,10 +151,28 @@ h1, h2, h3, h4, h5, h6
                 margin-right: 78px
                 font-weight: 500
                 line-height: 20px
+                position: relative
+                z-index: 2
                 &:hover
-                    color: #FECD05
+                    &::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        height: 6px
+                        width: 100%
+                        background: #EEBF00
+                        z-index: -1
+                        top: 12px
                 &.active
-                    color: #FECD05
+                    &::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        height: 6px
+                        width: 100%
+                        background: #EEBF00
+                        z-index: -1
+                        top: 12px
 
 .footer
     padding-top: 56px
@@ -432,7 +462,6 @@ h3
     background: #FFFFFF
     box-shadow: 0px 4px 15px rgba(14, 7, 40, 0.1)
     border-radius: 2px
-    padding: 16px 20px
     position: absolute
     span
         display: block
@@ -440,13 +469,14 @@ h3
         line-height: 145%
         color: #4B4B4B
         text-align: center
+        padding: 16px 20px
     .bored_block__relative
         position: relative
         svg
             position: absolute
             left: 50%
             transform: translateX(-50%)
-            top: -40px
+            top: -20px
     &.check
         background: #111111
         padding: 16px 50px
@@ -465,6 +495,9 @@ h3
         right: 34px
         bottom: 23%
 
+
+.bored__block.check .bored_block__relative svg
+    top: -35px
 h2
     font-weight: 800
     font-size: 48px
@@ -674,6 +707,8 @@ h2
         a
             text-decoration-line: underline
             color: #FECD05
+            &:hover
+                text-decoration: none
 
 .submit__form
     width: 100%
@@ -691,7 +726,7 @@ h2
 
 .breadcrumbs
     margin-top: 24px
-    margin-bottom: 24px
+    margin-bottom: 40px
     ul
         display: flex
         padding-left: 0
@@ -702,10 +737,12 @@ h2
             display: flex
             align-items: center
             margin-left: 14px
+            &:last-child
+                display: none
             &::before
                 content: ''
                 display: block
-                width: 6px
+                min-width: 6px
                 height: 6px
                 border-radius: 100%
                 background: #DEE0EE
@@ -718,6 +755,7 @@ h2
                 color: #4B4B4B
                 font-size: 14px
                 line-height: 130%
+
                     
                 
 h4
@@ -1390,6 +1428,94 @@ span.card__plus , span.card__minus
             color: #4B4B4B
 
 
+.mobile768
+    display: none
+
+.menu___bottom, .head__bot-modal, .header__bot-catalog
+    display: none
+
+.curtain
+    display: none
+    position: fixed
+    z-index: 998
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background: #111111
+    opacity: 0.7
+    
+.menu-flex
+    position: relative
+    .modal__header__catalog
+        position: absolute
+        display: none
+        background: #fff
+        padding: 32px 46px 8px 24px
+        border: 1px solid #F5F7FF
+        top: 60px
+        left: -50px
+        li
+            a
+                display: flex
+                align-items: center
+                transition: all 0.4s
+                margin-bottom: 24px
+                &:hover
+                    color: #EEBF00
+                .img-nm
+                    width: 48px
+                    height: 48px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 100%
+                    background: #F5F7FF
+                    margin-right: 16px
+
+.pos-re
+    position: relative
+    svg
+        position: absolute
+        left: 50%
+        top: -42px
+
+.svg__closed, .mobile___fotm_flex
+    display: none
+
+.container_products__left
+    .sorts__products_grid
+        display: none
+
+.rec__slider
+    .product
+        max-width: 245px
+        margin-right: 20px
+    
+.flickity-page-dots, .prices__mobile__title, .side__bar__rightprice_m
+    display: none
+
+.rec-wrapper
+    position: relative
+    .overlay
+        position: absolute
+        right: 0
+        z-index: 3
+
+.container_content
+    max-width: 760px
+    margin: 0 auto
+    p
+        font-size: 18px
+        line-height: 145%
+        margin-bottom: 24px
+        &:last-child
+            margin-bottom: 120px
+    img
+        margin-top: 48px
+        margin-bottom: 48px
+
+    
 @media( max-width: 1024px )
     .header_bottom_flex .menu-flex ul
         margin-bottom: 0
@@ -1406,6 +1532,7 @@ span.card__plus , span.card__minus
                 left: -110%
                 border: 1px solid #000
                 text-align: center
+                list-style-type: none
                 a
                     width: inherit !important
                     height: inherit !important
@@ -1451,14 +1578,6 @@ span.card__plus , span.card__minus
         grid-column: span 4 !important
     .competitor_item:nth-child(n+6)
         grid-column: span 3 !important
-    .competitor_item .competitor__title
-        font-weight: 700
-        font-size: 18px
-        line-height: 130%
-    .competitor__sub
-        font-weight: 400
-        font-size: 14px
-        line-height: 130%
     .competitor_item .comp___wrap
         padding: 33px 24px 32px 24px
     .competitor_item .competitor__title
@@ -1535,3 +1654,583 @@ span.card__plus , span.card__minus
         justify-content: flex-end
     .prd__grid
         grid-template-columns: 1.8fr 1fr
+
+@media( max-width: 768px )
+    .header-bottom
+        display: none
+    .menu___bottom
+        position: fixed
+        display: flex
+        justify-content: space-between
+        bottom: 0
+        left: 0
+        right: 0
+        background: #fff
+        padding: 15px 40px 8px 40px
+        z-index: 999
+    .banner .banner_title
+        font-weight: 800
+        font-size: 40px
+        line-height: 130%
+        max-width: 72%
+        margin-top: 15%
+        margin-bottom: 25px
+    .header-fixed__bottom
+        text-align: center
+        cursor: pointer
+        span
+            color: #111
+        a
+            color: #BEBFC7 
+            font-size: 12px
+            line-height: 130%
+            margin-top: 10px
+        p
+            color: #BEBFC7   
+            font-size: 12px
+            margin-bottom: 0
+            margin-top: 10px
+        &.active
+            a,p
+                color: #5D6070
+    .m-basket
+        position: relative
+        span
+            min-width: 16px
+            min-height: 16px
+            background: #FECD05
+            border-radius: 100%
+            position: absolute
+            display: flex
+            justify-content: center
+            position: absolute
+            top: -2px
+            right: -6px
+            align-items: center
+            font-weight: 700
+            font-size: 12px
+            line-height: 130%
+    .banner .banner_sub
+        font-size: 18px
+        line-height: 145%
+        color: #FFFFFF
+        max-width: 422px
+    .banner .container_sub
+        justify-content: flex-start
+    .banner
+        height: 558px
+        overflow: hidden
+        background-size: 200%
+        background-position: 50% center
+    .banner .banner__light
+        zoom: 1.1
+        left: -55px
+    .head__bot-modal
+        display: none
+        position: fixed
+        bottom: 76px
+        background: #fff
+        left: -40px
+        right: -40px
+        z-index: 999
+        ul
+            width: 100% 
+            list-style-type: none
+            a
+                color: #5D6070
+                box-shadow: inset 0px -1px 0px #F5F7FF, inset 0px 1px 0px #F5F7FF
+                transition: all 0.4s
+                display: block
+                text-align: center
+                font-size: 20px
+                line-height: 145%
+                padding: 24px 0
+                &:hover
+                    color: #EEBF00
+                .active
+                    color: #EEBF00    
+        .head__bot-modal_rel
+            width: 100%    
+            position: relative       
+            .close
+                position: absolute
+                left: 50%
+                width: 40px
+                height: 40px
+                z-index: 999
+                top: -20px
+                background: #fff
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                border-radius: 100%
+    .header__bot-catalog
+        position: fixed
+        bottom: 76px
+        background: #fff
+        left: -40px
+        right: -40px
+        z-index: 999
+        ul
+            width: 100% 
+            list-style-type: none
+            a
+                color: #5D6070
+                box-shadow: inset 0px -1px 0px #F5F7FF, inset 0px 1px 0px #F5F7FF
+                transition: all 0.4s
+                text-align: center
+                font-size: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                line-height: 145%
+                padding: 24px 0
+                &:hover
+                    color: #EEBF00
+                .active
+                    color: #EEBF00    
+                .img-nm
+                    width: 48px
+                    height: 48px
+                    background: #F5F7FF
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-right: 16px
+                    border-radius: 100%
+        .head__cat__rel
+            width: 100%    
+            position: relative       
+            .close
+                position: absolute
+                left: 50%
+                width: 40px
+                height: 40px
+                z-index: 999
+                top: -20px
+                background: #fff
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                border-radius: 100%
+    h3
+        font-size: 32px
+        line-height: 120%
+        margin-bottom: 32px
+        &::before
+            margin-top: 16px
+            margin-right: 25px
+            zoom: 0.5
+    .category_grid .box
+        max-width: 100%
+        overflow: hidden
+        img
+            max-width: inherit
+    .category_grid .box span
+        margin-bottom: 36px
+        margin-top: -30px
+    .category_grid .box:first-child
+            grid-row-start: 1
+            grid-row-end: 1
+            grid-column: span 2
+    .category_grid
+        .box:nth-child(1)
+            .img__category_index
+                zoom: 0.5
+            .abs_box
+                zoom: 0.45
+        .box:nth-child(2)
+            .img__category_index
+                width: 78%
+                margin-top: 24px
+            span
+                margin-top: 20px
+                padding: 0 10px
+        .box:nth-child(3)
+            .img__category_index
+                width: 78%
+                width: 85%
+                margin: auto
+                margin-top: 18px
+                margin-left: 58px
+            .abs_box
+                transform: rotate(180deg)
+                zoom: 0.75
+                top: 25%
+            span
+                margin-top: 46px
+        .box:nth-child(4)
+            .img__category_index   
+                width: 67%
+            span
+                margin-bottom: 28px
+                margin-top: 30px    
+        .box:nth-child(5)  
+            .abs_box   
+                top: 33%
+                zoom: 0.9
+            .abs_box2       
+                zoom: 0.9
+                top: 9%
+            span
+                margin-top: -8px
+    .competitors_main
+        margin-top: 96px
+    .competitor_item:nth-child(-n+6)
+        grid-column: span 3 !important
+    .competitor_item:last-child
+        grid-column: span 6 !important
+    .competitor_item:nth-child(n + 5):nth-child(-n + 7) .competitor__title
+        max-width: 100%
+    .bored__index .bored_l
+        display: none
+    .bored__index
+        .bored__img
+            min-width: 145%
+            margin-left: -152px
+    .bored__block:first-child
+        left: 14px
+        top: 146px
+        width: 260px
+    .bored__block:nth-child(3)
+        right: -10px
+        top: 30px
+        width: 390px
+    .bored__block:nth-child(2)
+        left: inherit
+        right: 20px
+        bottom: inherit
+        width: 300px
+        top: 288px
+    .bored__block.check
+        padding: 0 28px
+    .bored__block.check .bored_block__relative svg
+        top: -20px
+    .bored__block:nth-child(4)
+        bottom: inherit
+        bottom: 0
+        right: 23%
+        width: 322px
+    .bored__block span
+        display: none
+    .bored__block.check span
+        display: block
+    .svg__main, .svg__closed
+        cursor: pointer
+    .hard_for__you h2
+        width: 283px
+        margin: inherit
+        margin-top: 64px
+        font-weight: 700
+        font-size: 32px
+        line-height: 120%
+        margin-left: 30px
+        margin-bottom: 32px
+        margin-left: 40px
+    .harder__block span
+        zoom: 0.65
+    .harder__block p
+        font-weight: 400
+        font-size: 16px
+        line-height: 145%
+    .harder-flex
+        padding: 0 50px 25px
+    .harder__block
+        margin-bottom: 20px
+    .services__wrap h3
+        justify-content: center
+    .services__for__companies .services_subs
+        max-width: 589px
+        text-align: center
+        margin: auto
+        margin-bottom: 32px
+    .services__for__companies
+        padding-top: 50px
+    .services_grid .service__block a
+        overflow: hidden
+    .services_grid .service__block a p
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        bottom: 22px
+    .services_grid .service__block
+        height: 450px
+    .service__block img
+        min-width: 130%
+    .services_grid
+        margin-bottom: 100px
+    .just_form__flex
+        flex-direction: column
+    .form__flex__left
+        display: none
+    .just-form
+        background: url('images/formm.jpg')
+    .just_form__flex
+        padding: 0
+    .mobile768
+        display: inline-flex
+        width: max-content
+        color: #fff
+        font-weight: 700
+        font-size: 32px
+        line-height: 120%
+        span
+            color: #FECD05
+            margin-left: 10px
+        &::before
+            margin-top: 14px
+            margin-right: 16px
+    .form__flex__right
+        width: 100%
+    .form__flex__right .input_f
+        width: 100%
+    .form-group label
+        color: #fff
+    .input-ff
+        display: flex
+        justify-content: space-between
+    .form__flex__right .input-ff .input_f
+        width: 55%
+        &:first-child
+            width: 40%
+    .ffff_bottom_flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        .submit__form
+            width: 273px
+    .form__flex__right .input_f
+        margin-bottom: 24px
+    .submit__form
+        margin-top: 0
+    .mobile___fotm_flex
+        display: flex
+        justify-content: space-between
+        margin-top: 80px
+    .sub__p
+        font-weight: 400
+        font-size: 18px
+        line-height: 145%
+        color: #FFFFFF
+        max-width: 470px
+    .mobile__flex__column
+        a
+            font-weight: 600
+            font-size: 14px
+            line-height: 120%
+            color: #fff
+        p
+            font-weight: 400
+            font-size: 12px
+            line-height: 130%
+            color: #fff
+    .footer-block:last-child
+        flex-basis: 32%
+    .footer ul > li > a
+        font-weight: 500
+        font-size: 14px
+        line-height: 120%
+        color: #4B4B4B
+    .footer-block:last-child a.tel
+        font-weight: 500
+        font-size: 14px
+        line-height: 120%
+        color: #4B4B4B
+    .footer-block:last-child a
+        font-size: 14px
+        line-height: 130%
+    .footer-block:last-child .address
+        font-size: 14px
+        line-height: 130%
+    .footer
+        padding-bottom: 64px
+    .container__products__right .sorts
+        display: none
+    .container__products
+        flex-direction: column
+    .container_products__left
+        h5, ul
+            display: none
+    .prices-slider
+        margin-top: 0
+    .container__products__right
+        width: 100%
+    .container__products__right
+    width: 74%
+    .sorts
+        display: flex
+        align-items: center
+    .sorts__title
+        color: #BEBFC7
+        font-size: 14px
+        line-height: 130%
+        margin-right: 24px
+    .sorts__pop_rating_price
+        a
+            color: #4B4B4B
+            font-size: 14px
+            line-height: 130%
+            margin-right: 24px
+            transition: all 0.4s
+            &.active
+                color: #EEBF00
+                border-bottom: 1px dashed #EEBF00
+            &:hover
+                color: #EEBF00
+    .sorts__products_grid
+        display: flex
+    .products__change
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #F5F7FF
+        margin-left: 8px
+        border-radius: 4px
+        .svg__g
+            transition: all 0.4s
+        &.active
+            .svg__g
+                fill: #EEBF00
+        &:hover
+            .svg__g
+                fill: #EEBF00
+    .products__sorts
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .container__products__right
+        .sorts__products_grid
+            display: none
+    .container__products .container_products__left
+        width: 100%
+        min-width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    .container_products__left
+        .sorts__products_grid
+            display: flex
+    .container__products .prices-slider
+        margin-top: 0
+    .prices__mobile__title
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 350px
+        background: #F5F7FF
+        border-radius: 4px
+        height: 32px
+        cursor: pointer
+        svg
+            margin-right: 8px
+    select 
+        -webkit-appearance: none
+        -moz-appearance: none
+        background: #F5F7FF
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6a.499.499 0 0 1-.353-.146l-5-5a.5.5 0 1 1 .707-.707L6 4.793 10.646.147a.5.5 0 1 1 .707.707l-5 5A.498.498 0 0 1 6 6Z' fill='%234B4B4B'/%3E%3C/svg%3E")
+        background-repeat: no-repeat
+        font-weight: 400
+        padding: 7px 14px
+        padding-right: 42px
+        font-size: 14px
+        color: #4B4B4B
+        border: none
+        background-position-x: 87%
+        background-position-y: 51%
+    .prices-slider
+        display: none
+    .rec-wrapper .overlay
+        right: -55px
+    .container__products .prices-slider
+        width: 100%
+    .container__products .prices-slider #example_2_input_from, .container__products .prices-slider #example_2_input_to
+        width: 85px
+        height: 40px
+        font-size: 12px
+        line-height: 130%
+        padding-left: 16px
+    .side__bar__rightprice_m
+        display: block
+    .prd-grid__right
+        display: none
+    .prd__grid
+        grid-template-columns: 1fr
+    .container_content
+        img
+            margin-top: 32px
+            margin-bottom: 32px
+        p:last-child
+            margin-bottom: 100px
+
+@media ( max-width: 420px)
+    .breadcrumbs
+        margin-top: 24px
+        margin-bottom: 40px
+        ul
+            display: flex
+            padding-left: 0
+            margin-bottom: 0
+            li
+                list-style-type: none
+                position: relative
+                display: flex
+                align-items: center
+                margin-left: 14px
+                display: none
+                &:last-child
+                    display: block
+                &::before
+                    display: none
+    .container_content img
+        margin-bottom: 24px
+        margin-top: 0
+    .header .header-top .header-top_flex .header_top_left
+        display: none
+    .header_top_right
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .breadcrumbs
+        margin-bottom: 26px
+    h3::before
+        display: none
+    h3
+        font-weight: 700
+        font-size: 24px
+        line-height: 130%
+    .container_sub
+        padding: 0 15px
+    .footer .footer-top
+        flex-direction: column
+    .footer-block
+        margin-bottom: 32px
+    .footer-bottom
+        flex-direction: column
+        align-items: flex-start
+    .footer .footer-top
+        padding-bottom: 4px
+    .copyr
+        font-size: 14px
+        line-height: 130%
+    .footer-bottom .footer_bott_rlinks a
+        font-size: 14px
+        line-height: 130%
+    .footer a
+        font-size: 14px
+        line-height: 130%
+    .footer_bott_right
+        margin-top: 26px
+    .menu___bottom
+        padding: 15px
+    .header__bot-catalog ul a
+        font-size: 14px
+        padding: 16px 24px
+    .head__bot-modal ul a
+        font-size: 14px
+        padding: 16px 0
