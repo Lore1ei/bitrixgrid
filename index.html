@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -493,42 +494,42 @@
         <h3>Более 250 брендов</h3>
 
         <div class="brands__company row">
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/1.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/2.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/3.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/4.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/5.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/6.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/7.jpg" alt="">
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
                 <div class="brand__img">
                     <img src="images/brands/8.jpg" alt="">
                 </div>
@@ -666,6 +667,15 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="main.js"></script>
+    <script>
+    $('.slide-poducts, .rec__slider, .harder-flex .row').flickity({
+        // options
+        cellAlign: 'left',
+        freeScroll: true,
+        wrapAround: true
+      });
+    </script>
 </body>
 </html>

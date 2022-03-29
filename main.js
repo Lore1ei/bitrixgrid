@@ -248,5 +248,27 @@ $(document).ready(function() {
         freeScroll: true,
         wrapAround: true
       });
-      
+
+      if ($(window).width() < 450) {
+        $('.flex__tabs_nav').flickity({
+          // options
+          cellAlign: 'left',
+          freeScroll: false,
+          wrapAround: true
+        });
+
+	
+          $(".prod_page_m_slider").on("init reInit afterChange", function(event, slick) {
+            $(".prod__count__slide").html(
+              slick.slickCurrentSlide() + 1 + "/" + slick.slideCount
+            );
+          });
+
+          $('.prod_page_m_slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        
+     }
 });
